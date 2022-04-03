@@ -1,0 +1,17 @@
+{
+  "name": "medicbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "repository": "git@github.com:jonassagild/medicbot.git",
+  "author": "<jonassagild@hotmail.com>",
+  "license": "MIT"
+}
