@@ -89,17 +89,18 @@ function handleMessage(senderPsid, receivedMessage) {
     //   'text': `Tjena! Hvordan føler du deg?`
     // };
     response = {
-      "payload": {
-        "template_type": "button",
-        "text": "Enda mer tekst?",
-        "buttons": [
-          {
-            "type": "postback",
-            "title": "1",
-            "payload": "1"
-          },
-        ]
-      }
+      "text": "Enda mer tekst?",
+      "quick_replies":[
+        {
+          "content_type":"text",
+          "title":"1",
+          "payload":"1",
+        },{
+          "content_type":"text",
+          "title":"2",
+          "payload":"2",
+        }
+      ]
     }
   } else if (receivedMessage.attachments) {
 
@@ -164,6 +165,7 @@ function callSendAPI(senderPsid, response) {
     'recipient': {
       'id': senderPsid
     },
+    "messaging_type": "RESPONSE",
     'message': response
   };
 
