@@ -89,17 +89,33 @@ function handleMessage(senderPsid, receivedMessage) {
     //   'text': `Tjena! Hvordan føler du deg?`
     // };
     response = {
-      "text": "Enda mer tekst?",
+      "text": "Tjena! Hvordan føler du deg?",
       "quick_replies":[
         {
           "content_type":"text",
           "title":"1",
           "payload":"1",
-        },{
+        },
+        {
           "content_type":"text",
           "title":"2",
           "payload":"2",
-        }
+        },
+        {
+          "content_type":"text",
+          "title":"3",
+          "payload":"3",
+        },
+        {
+          "content_type":"text",
+          "title":"4",
+          "payload":"4",
+        },
+        {
+          "content_type":"text",
+          "title":"5",
+          "payload":"5",
+        },
       ]
     }
   } else if (receivedMessage.attachments) {
